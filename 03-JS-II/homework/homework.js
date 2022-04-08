@@ -197,7 +197,6 @@ function tablaDelSeis(){
     resultado = 6 * i;
     resultadoArray.push(resultado);
   }
-
   return resultadoArray;
 }
 
@@ -214,11 +213,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let valor = numero;
+  let i = 0;
   do {
-    numero = numero + 5;
-    valor = valor + numero
-  } while (numero <= 40);
-
+    i = i + 1;
+    valor = valor + 5;
+  }
+  while(i < 8);
   return valor;
 }
 doWhile(0);
